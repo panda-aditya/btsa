@@ -5,9 +5,13 @@
 This project analyses the stock performance of major technology companies using historical price data. The goal is to understand:
 
 Risk vs return trade-offs
+
 Correlation between stocks
+
 Long-term investment performance
+
 Limitations of simple predictive models
+
 
 # 🎯 Objective
 
@@ -15,19 +19,30 @@ To evaluate the performance of major technology stocks by analysing returns, vol
 
 # 📂 Dataset
 Source: Public CSV datasets
+
 Companies: Major technology firms
+
 Features:
 Date
+
 Close Price
+
 Volume
+
 Derived metrics (Returns, Moving Average, Cumulative Return)
+
 
 # ⚙️ Tech Stack
 Python
+
 Pandas
+
 NumPy
+
 Matplotlib
+
 Seaborn
+
 Scikit-learn
 
 # 📈 Key Analyses
@@ -66,13 +81,20 @@ Prediction
 
 # 🔍 Key Insights
 High-return stocks also exhibit higher volatility
+
 Strong correlation limits diversification in the tech sector
+
 Some stocks provide stable returns for conservative investors
+
 Long-term performance differs significantly from short-term trends
+
 Linear regression captures trends but fails on volatility
 
 # ⚠️ Limitations
 No macroeconomic factors included
+
 Based only on historical data
+
 Simple regression model used
+
 Does not account for market sentiment
