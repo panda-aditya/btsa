@@ -53,9 +53,9 @@ A comprehensive exploratory data analysis (EDA) and machine learning project exa
 | `date` | DateTime | Trading date (DD-MM-YYYY) |
 | `close` | Float | Daily closing price (USD) |
 | `volume` | Integer | Number of shares traded |
-| `Return` ⚙️ | Float | Daily % change in closing price |
-| `MA_30` ⚙️ | Float | 30-day rolling average of close |
-| `Cumulative_Return` ⚙️ | Float | Compounded growth from first trading date |
+| `Return`* | Float | Daily % change in closing price |
+| `MA_30`* | Float | 30-day rolling average of close |
+| `Cumulative_Return`* | Float | Compounded growth from first trading date |
 
 > *Derived feature — engineered during preprocessing.*
 
