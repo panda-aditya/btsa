@@ -1,10 +1,10 @@
-# 📈 Comparative Analysis of Big Tech Companies Using Stock Price Data
+# Comparative Analysis of Big Tech Companies Using Stock Price Data
 
 A comprehensive exploratory data analysis (EDA) and machine learning project examining the historical stock performance of 14 major technology companies. The project evaluates returns, volatility, correlations, and long-term growth to understand risk-return trade-offs and diversification potential within the tech sector.
 
 ---
 
-## 🏢 Companies Analysed
+## Companies Analysed
 
 | Ticker | Company |
 |--------|---------|
@@ -25,7 +25,7 @@ A comprehensive exploratory data analysis (EDA) and machine learning project exa
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── big_tech_companies.csv          # Company metadata (14 rows, 2 columns)
@@ -37,7 +37,7 @@ A comprehensive exploratory data analysis (EDA) and machine learning project exa
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 | Dataset | Records | Attributes | Key Column |
 |---------|---------|------------|------------|
@@ -57,11 +57,11 @@ A comprehensive exploratory data analysis (EDA) and machine learning project exa
 | `MA_30` ⚙️ | Float | 30-day rolling average of close |
 | `Cumulative_Return` ⚙️ | Float | Compounded growth from first trading date |
 
-> ⚙️ *Derived feature — engineered during preprocessing.*
+> *Derived feature — engineered during preprocessing.*
 
 ---
 
-## ⚙️ Data Preprocessing
+## Data Preprocessing
 
 1. **Date Parsing** — Dates stored as `DD-MM-YYYY` were parsed with `dayfirst=True` to prevent month/day transposition errors, then sorted chronologically per company.
 2. **Missing Values** — Identified with `isnull().sum()` and removed with `dropna()` before merging.
@@ -74,7 +74,7 @@ A comprehensive exploratory data analysis (EDA) and machine learning project exa
 
 ---
 
-## 📉 Visualisations & Analysis
+## Visualisations & Analysis
 
 ### 1. Stock Price Trends
 ![Stock Price Trends](images/image1.png)
@@ -156,7 +156,7 @@ A linear regression model was fitted per company using date ordinal as the sole 
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
 - **Risk-return trade-off is confirmed** — companies with the highest average daily returns (e.g., NVIDIA, Tesla) also show the greatest volatility.
 - **High sector correlation** — most company pairs have correlations above 0.6–0.7, meaning the tech sector largely moves as a unit. Holding multiple tech stocks does not meaningfully reduce risk.
@@ -167,7 +167,7 @@ A linear regression model was fitted per company using date ordinal as the sole 
 
 ---
 
-## 🛠️ Tools & Libraries
+## Tools & Libraries
 
 | Tool | Purpose |
 |------|---------|
@@ -181,7 +181,7 @@ A linear regression model was fitted per company using date ordinal as the sole 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 ```bash
@@ -199,7 +199,7 @@ Make sure `big_tech_companies.csv` and `big_tech_stock_prices.csv` are in the sa
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 - Macroeconomic variables (interest rates, inflation, GDP) are not included.
 - The analysis is retrospective — it does not reliably predict future prices.
@@ -209,7 +209,7 @@ Make sure `big_tech_companies.csv` and `big_tech_stock_prices.csv` are in the sa
 
 ---
 
-## 🔭 Future Scope
+## Future Scope
 
 - Incorporate ARIMA or LSTM models for time-series forecasting
 - Add macroeconomic features (CPI, Fed rate, VIX) as external regressors
