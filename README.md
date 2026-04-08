@@ -190,7 +190,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 
 ### Run the Notebook
 ```bash
-git clone https://github.com/your-username/big-tech-stock-analysis.git
+git clone https://github.com/panda-aditya/big-tech-stock-analysis.git
 cd big-tech-stock-analysis
 jupyter notebook big_tech_analysis.ipynb
 ```
